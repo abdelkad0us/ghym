@@ -1,0 +1,23 @@
+@import 'functions.scss';
+@import 'mixins.scss';
+@import 'editor.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+span{
+    display: inline;
+}
+@font-face {
+    font-family: firstFont_BoldItalic;
+    src: url(../font/CaskaydiaCoveNerdFont-BoldItalic.ttf);
+    font-family: firstFont_Regular;
+    src: url(../font/CaskaydiaCoveNerdFont-Regular.ttf);
+}
+body{
+    font-family: firstFont_Regular;
+}

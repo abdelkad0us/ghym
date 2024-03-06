@@ -1,0 +1,12 @@
+@mixin flex($row,$wrap){
+    display: flex;
+    flex-flow: $row $wrap;
+}
+@mixin size($height,$width){
+    height: $height;
+    width: $width;
+}
+@mixin flexPos($align,$justify){
+    align-items: $align;
+    justify-content: $justify;
+}

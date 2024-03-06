@@ -1,0 +1,33 @@
+.editor-continer{
+    position: relative;
+    @include flex(row,nowrap);
+    @include size(100vh,100%);
+    @include flexPos(center,space-between);
+    background: pink;
+    .number-slider{
+        display: inline-block;
+        @include flex(column,nowrap);
+        // @include flexPos(start,right);
+        align-items: end;
+        justify-content: start;
+        @include size(auto,100px);
+        min-height: 100vh;
+        background: red;
+        div{
+            padding: 5px 10px;
+        }
+    }
+    .editor{
+        position: relative;
+        display: inline-block;
+        @include flex(column,nowrap);
+        background: orange;
+        @include size(auto,calc(100% - 100px));
+        min-height: 100vh;
+        div{
+            padding: 5px 10px;
+        }
+        cursor: text;
+        font-size: 16px,50px;
+    }
+}
